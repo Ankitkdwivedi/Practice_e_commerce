@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"node current_seed.js\"  \"nodemon app.js\" ",
-    "seed": "concurrently \"node login_seed.js\"  \"node product_seed.js\"  \"node top_seed.js\" ",
-    "install": "npm i ejs express mongoose nodemon concurrently razorpay body-parser dotenv"
+    "start": "concurrently \"node current_seed.js\"  \"node app.js\" "
   },
   "author": "",
   "license": "ISC",
