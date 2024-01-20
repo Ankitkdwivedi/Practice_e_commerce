@@ -32,7 +32,7 @@ app.use('/src', express.static(path.join(__dirname, 'src'), { 'extensions': ['js
 
 app.use(express.urlencoded({extended:true}));
 app.get('/',(req,res)=>{
-    res.send("Hello...");
+    res.redirect('/products');
 })
 app.get('/products',async (req,res)=>{
     let products = await Product.find({});
